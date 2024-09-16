@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row more-images">
+    {% for image in include.product.images %}
+    <div class="col-6 col-md-3 mb-4 image" data-item-id="{{ product.name }}">
+      <img src="{{ site.baseurl }}{{ image.src }}" class="img-fluid" alt="{{ image.alt-text }}">
+    </div>
+    {% endfor %}
+  </div>
+</div>

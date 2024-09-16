@@ -24,13 +24,6 @@ _inputs:
     comment: "This is used for facebook shares of the page and google indexing"
 
 collections_config:
-  staff_members:
-    _enabled_editors:
-      - data
-    icon: account_circle
-    schemas:
-      default:
-        path: schemas/staff_members.md
   products:
     _enabled_editors:
       - data

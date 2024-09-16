@@ -1,52 +1,53 @@
-.map {
-	height: 499px;
-	border: 1px solid #DDDDDD;
-	border-radius: 3px;
+.contact-box {
+  @extend %flexbox;
+  @include flex-flow(wrap);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 0 50px 0;
+
+  .contact-details {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    @media #{$desktop} {
+      -webkit-flex: 1;
+      flex: 1;
+    }
+  }
+
+  .contact-details {
+    font-size: 0.8em;
+
+    a svg {
+      position: relative;
+      top: 5px;
+    }
+
+    a {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+    }
+  }
 }
 
-.contact-box {
-	@extend %flexbox;
-	@include flex-flow(wrap);
-	max-width: 1000px;
-	margin: 0 auto 20px auto;
-	padding: 0 0 50px 0;
+.map {
+  width: 100%;
+  height: 80%; /* Maintain aspect ratio */
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-top: 20px; /* Space between contact details and map */
 
-	form {
-		width: 100%
-	}
+  iframe {
+    width: 100%;
+    height: 100%; /* Ensure the iframe fills the container */
+    border: 0; /* Remove default border */
+  }
+}
 
-	h3 {
-		margin: 0;
-		font-size: 1.8rem;
-	}
-
-	.contact-form, .contact-details  {
-		padding: 20px;
-		width: 100%;
-		box-sizing: border-box;
-		@media #{$desktop} {
-			-webkit-flex: 1;
-			flex: 1;
-			order: 2;
-		}
-	}
-
-	.contact-details {
-		font-size: .8em;
-		@media #{$desktop} {
-			order: 1;
-		}
-
-		a svg {
-			position: relative;
-			top: 5px;
-		}
-
-		a {
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			display: block;
-		}
-	}
+@media #{$desktop} {
+  .contact-details {
+    font-size: 0.9em;
+  }
 }

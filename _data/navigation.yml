@@ -2,11 +2,11 @@
   link: /
   new_window: false
   highlight: false
-- name: Our Story
+- name: About Us
   link: /about/
   new_window: false
   highlight: false
-- name: Contact
+- name: Contact Us
   link: /contact/
   new_window: false
   highlight: false

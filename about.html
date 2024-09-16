@@ -1,30 +1,22 @@
 ---
-title: Our Story
-hero: Our story
+title: About Us
+hero: About Us
 ---
 
-<p class="editor-link" style="text-align: center; position: relative;
-    top: -185px;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
-<ul class="staff">
-	{% for person in site.staff_members %}
-		<li>
-			<div class="staff-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
-			<div class="name">{{ person.name }}</div>
-		</li>
-	{% endfor %}
-</ul>
+<div class="about-us">
+	<h1>About Us</h1><br />
+	<p>At <strong>{{ site.title }}</strong>, we specialize in providing top-quality industrial equipment imported from
+		Korea and Japan, catering to a wide range of industries. Based in Lahore, Pakistan, we offer both new and used
+		equipment to meet the diverse needs of our clients. Our commitment to sourcing unique, high-performance machinery
+		ensures that businesses can thrive with reliable, cost-effective solutions.</p>
 
-<div class="thirds story-points">
-	<div>
-		<h3 class="editable">Passion</h3>
-		<p class="editable">What more could you want from life than drawing animals and bringing happiness to others? We hope this passion show through in our work.</p>
-	</div>
-	<div>
-		<h3 class="editable">Animal</h3>
-		<p class="editable">It's easy to forget that we're all part of the animal kingdom. Fur is a brand that helps you get in touch with your inner animal.</p>
-	</div>
-	<div>
-		<h3 class="editable">Style</h3>
-		<p class="editable">We like to keep things plain and simple around here to help the animals speak for themselves.</p>
+	<p>Located in the heart of Lahore’s industrial market, we pride ourselves on delivering excellence, backed by
+		exceptional customer service. Let us help you power your business forward.</p>
+
+	<br />
+	<div class="contact-info">
+		<h1>Contact Us</h1><br />
+		<p><strong>Phone:</strong> <a href="tel:{{site.phone}}">{{ site.phone_pk_icon}} {{ site.phone }}</a></p>
+		<p><strong>Address:</strong> {{ site.address }}</p>
 	</div>
 </div>

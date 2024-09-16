@@ -2,20 +2,35 @@
 layout: default
 ---
 <div class="content">
-	<section class="page">
-		<div class="container">
-			<div class="product-container">
-				{% include product-styles.html product=page %}
-				<div class="product-details" id="add">
-					<h3>{{ page.name }}</h3>
-					{{ page.description_markdown | markdownify }}
+  <section class="page">
+    <div class="container">
+      <div class="product-container">
+        <div class="images">
+          <div class="image" data-item-id="{{ pag.name }}">
+            <a href="{{ include.page.url }}">
+              <img src="{{ site.baseurl }}{{ page.base-image-src }}" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="product-details" id="add">
+          <h3>{{ page.name }}</h3>
+          {{ page.description_markdown | markdownify }}
+        </div>
+      </div>
+    </div>
 
-					<h4>${{ page.price }}</h4>
-					<div class="button">{% include snipcart-button.html product=page %}</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  </section>
+
+  {% if page.images and page.images.size > 1 %}
+  <section>
+    <div class="container mb-3">
+      <h1>More Images</h1>
+    </div>
+
+    {% include product-images.html product=page %}
+  </section>
+  {% endif %}
+
+  {% include buy-contact-us.html %}
+
 </div>
-
-<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />

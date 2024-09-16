@@ -1,22 +1,21 @@
 # ----
 # Site
 
-title: Fur
+title: Unique Industrial Equipments
 url: "http://turquoise-rook.cloudvent.net/"
 baseurl:
-google_analytics_key:
-google_maps_javascript_api_key:
-snipcart_key: "NWNjOWZhYjctYmE1ZS00MDM3LThkNjUtZmE5M2NiMTU1NzAwNjM2MjYzNTE1MzM5ODg1ODkw"
-snipcart_currency: "usd"
+
+phone: "+92 3448259683"
+email: "Uniquetradersjp555@gmail.com"
+address: "Street No. 03, Sharif Garden, Container Market, Lahore, Pakistan"
+phone_pk_icon: " 🇵🇰 "
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
 description: Fur t-shirt store
 author:
-  name: fur
-  email: fur@example.com
-  twitter: fur # twitter username without the @ symbol
-  phone: "+1 23456789"
+  name: Ansarissab
+  link: "https://github.com/Ansarissab"
 social:
   name: Fur Template
   links:
@@ -27,27 +26,22 @@ social:
 timezone: Etc/UTC
 
 collections:
-  staff_members:
-    output: false
   products:
     output: true
 
 permalink: pretty
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "products"
     values:
       layout: "product"
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "page"
-  -
-    scope:
+  - scope:
       path: "index.html"
     values:
       layout: "default"
