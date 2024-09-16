@@ -13,7 +13,16 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
-	<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/logos/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/logos/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/logos/favicon-16x16.png">
+	<link rel="manifest" href="/images/logos/site.webmanifest">
+	<link rel="mask-icon" href="/images/logos/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.ico">
 
 
 </head>
@@ -70,13 +79,6 @@
 					<p class="email"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 					<p><a href="tel:{{ site.phone }}">{{ site.phone_pk_icon }} {{ site.phone }}</a></p>
 
-					<div class="social-icons">
-						<a class="facebook" href="https://facebook.com/yourcompany">{% include social-icon.html icon="Facebook2"
-							%}</a>
-						<a class="twitter" href="https://twitter.com/yourcompany">{% include social-icon.html icon="Twitter" %}</a>
-						<a class="linkedin" href="https://linkedin.com/company/yourcompany">{% include social-icon.html
-							icon="LinkedIn" %}</a>
-					</div>
 				</li>
 			</ul>
 			<p class="copyright">All Rights Reserved &copy; {{ site.time | date: '%Y' }} {{ site.title }}, Inc. Developed and
