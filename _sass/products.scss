@@ -2,9 +2,17 @@
   width: 100%;
   background: #eee;
   position: relative;
-  padding: 20px;
   box-sizing: border-box;
   border-radius: 3px;
+}
+
+.images,
+.more-images {
+  img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
 }
 
 .product-container {

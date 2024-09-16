@@ -4,13 +4,9 @@ layout: default
 <div class="content">
   <section class="page">
     <div class="container">
-      <div class="product-container">
-        <div class="images">
-          <div class="image" data-item-id="{{ pag.name }}">
-            <a href="{{ include.page.url }}">
-              <img src="{{ site.baseurl }}{{ page.base-image-src }}" alt="">
-            </a>
-          </div>
+      <div class="product-container row">
+        <div class="images card h-100">
+          <img src="{{ site.baseurl }}{{ page.base-image-src }}" alt="{{ page.base-image-alt-text }}">
         </div>
         <div class="product-details" id="add">
           <h3>{{ page.name }}</h3>
