@@ -13,12 +13,12 @@ subtitle: Sourcing Quality Machinery from Korea and Japan
           <div class="card h-100">
             <div class="images">
               <a href="{{ product.url | relative_url }}">
-                <img src="{{ site.baseurl }}{{ product.base-image-src }}" class="card-img-top"
+                <img src="{{ product.base-image-src | relative_url }}" class="card-img-top"
                   alt="{{ product.base-image-alt-text }}">
               </a>
             </div>
             <div class="card-body">
-              <h4 class="card-title"><a href="{{ product.url }}">{{ product.name }}</a></h4>
+              <h4 class="card-title"><a href="{{ product.url | relative_url }}">{{ product.name }}</a></h4>
               <p class="card-text">{{ product.description_markdown | truncate: 95 | markdownify }}</p>
             </div>
           </div>

@@ -6,7 +6,7 @@ layout: default
     <div class="container">
       <div class="product-container row">
         <div class="images card h-100">
-          <img src="{{ site.baseurl }}{{ page.base-image-src }}" alt="{{ page.base-image-alt-text }}">
+          <img src="{{ page.base-image-src | relative_url }}" alt="{{ page.base-image-alt-text }}">
         </div>
         <div class="product-details" id="add">
           <h3>{{ page.name }}</h3>
