@@ -12,7 +12,10 @@ phone_pk_icon: " 🇵🇰 "
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Fur t-shirt store
+description: "We are Unique Industrial Equipments, a leading supplier of high-quality industrial equipment and machinery. We provide a wide range of products to meet the needs of various industries."
+keywords: "Industrial Equipment, Machinery, Supplier, High-Quality, Various Industries"
+language: "en_US"
+locale: "en_US"
 author:
   name: Ansarissab
   link: "https://github.com/Ansarissab"
